@@ -37,8 +37,29 @@
     cursor: pointer
 }
 
-@media (max-width: 1000px){
-    .navBar {
+.hide {
+    display: none;
+}
+
+.show {
+    width: 40vw;
+    height: 90vh;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 8vh;
+}
+
+.show > button {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+
+@media (max-width: 800px){
+    .burger {
         display: flex;
     }
     .button-container {

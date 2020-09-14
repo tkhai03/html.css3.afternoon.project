@@ -19,6 +19,7 @@ export default class NavBar extends Component {
 
 
     render() {
+        console.log(this.state.display)
         return (
             <div>
                 <header className='header'>
@@ -30,6 +31,16 @@ export default class NavBar extends Component {
                             <button className='button'>Projects</button>
                             <button className='button'>Contact</button>
                         </div>
+
+                        <div className= {this.state.display ? 'show' : 'hide'}>
+                            <button className='button'>About</button>
+                            <button className='button'>Projects</button>
+                            <button className='button'>Contact</button>
+
+
+                        </div>
+
+
                     </div>
                 </header>
             </div>
